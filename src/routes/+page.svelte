@@ -8,6 +8,8 @@ This is your page!
   import ArticleBody from '$lib/components/ArticleBody.svelte';
   import Image from '$lib/components/Image.svelte';
   import RelatedLinks from '$lib/components/RelatedLinks.svelte';
+  import BigNumber from '$lib/components/BigNumber.svelte';
+  import Dashboard from '$lib/components/Dashboard.svelte';
 
   // Article metadata
   let headline = 'Become a force for good. Join our next class.';
@@ -45,6 +47,22 @@ This is your page!
     caption="The Craig Newmark Graduate School of Journalism is at 219 West 40th Street in Midtown Manhattan."
     credit="Craig Newmark Graduate School of Journalism"
   />
+<!--  Dashboard -->
+<Dashboard>
+  <BigNumber
+    number="2006"
+    label="Year Founded"
+  />
+  <BigNumber
+    number="1,300"
+    label="Alumni"
+  />
+  <BigNumber
+    number="50%"
+    label="Attend tuition free"
+    footnote="As of Aug. 2025"
+  />
+</Dashboard>
 
   <!-- Article Body: The main story text with proper typography -->
   <ArticleBody>
